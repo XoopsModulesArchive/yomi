@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="<?=$EST['html_path_url']?>style.css" type="text/css">
+
+<a name=top></a>
+<br><br><br>
+<center>
+<table border=3 width="450" cellpadding=1>
+<tr><td cellpadding=2 width="100%">
+<br>
+<center><font size="+2">¡Ú<?=$TITLE?>¡Û</font></center>
+<br>
+<ul>
+<li><?=$MES?>
+</ul>
+<br>
+<center><?=$BACK_URL?></center> <br>
+</td></tr>
+</table>
+</center>
+<?php
+include "footer.php";
+?>
+
+<?php
+if (isset($link) && $link) {
+    @$GLOBALS['xoopsDB']->close($link);
+}
+exit;
+?>
